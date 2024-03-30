@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="general_blur" type="id" />
+    <item name="loginButton" type="id" />
+
+        <item name="editTextFoodName" type="id" />
+    <item name="item" type="id" />
+
+</resources>

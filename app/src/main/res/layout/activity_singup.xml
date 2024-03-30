@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".singup">
+
+    <RelativeLayout
+        android:id="@+id/yourRelativeLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo1"
+            android:padding="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        app:layout_constraintTop_toBottomOf="@+id/yourRelativeLayoutId"
+        android:layout_width="220dp"
+        android:layout_height="520dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/shape_right_panel"/>
+
+    <LinearLayout
+        android:id="@+id/singin"
+        app:layout_constraintTop_toBottomOf="@+id/yourRelativeLayoutId"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/shape_login"
+        tools:ignore="MissingConstraints"
+        android:paddingTop="70dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:orientation="vertical">
+
+        <EditText android:hint="Name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableRight="@drawable/baseline_groups_2_24"
+            />
+        <EditText android:hint="Email or phone number"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableRight="@drawable/baseline_email_24"
+            />
+        <EditText android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableRight="@drawable/baseline_key_24"
+            />
+        <EditText android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableRight="@drawable/baseline_key_24"
+            />
+
+
+
+
+    </LinearLayout>
+    <Button
+        android:layout_marginBottom="5dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_color"
+        app:layout_constraintBottom_toBottomOf="@id/singin"
+        android:text="Sign in"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tvngo"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/singin"
+        android:text="USER"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="25sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="-20dp"
+        tools:ignore="MissingConstraints"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/singin"
+        android:text="Volunteer"
+        android:gravity="right"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="-20dp"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"/>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
